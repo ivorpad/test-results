@@ -1,9 +1,0 @@
-<div [formGroup]="group" *ngIf="radioInputs">
-    <label class="form__label">{{ 'contenttypes.field.properties.data_type.label' | dm }}</label>
-    <p-radioButton *ngFor="let radio of radioInputs"
-        [label]="radio.text | dm"
-        name="dataType"
-        [value]="radio.value"
-        [formControlName]="property.name">
-    </p-radioButton>
-</div>
